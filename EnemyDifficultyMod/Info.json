@@ -1,0 +1,12 @@
+{
+  "Id": "EnemyDifficultyMod",
+  "DisplayName": "Enemy Difficulty Mod",
+  "Author": "Snarkki",
+  "Version": "1.0.0",
+  "ManagerVersion": "0.24.0.0",
+  "GameVersion": "1.0.0s",
+  "Requirements": [],
+  "AssemblyName": "EnemyDifficultyMod.dll",
+  "HomePage": "",
+  "EntryMethod": "EnemyDifficultyMod.Main.Load"
+}
