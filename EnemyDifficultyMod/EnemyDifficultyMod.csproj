@@ -130,7 +130,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ContentAdder.cs" />
-    <Compile Include="Config\Blueprints.cs" />
     <Compile Include="Config\IUpdatableSettings.cs" />
     <Compile Include="Config\ModSettings.cs" />
     <Compile Include="Config\SettingGroup.cs" />
@@ -138,7 +137,6 @@
     <Compile Include="Main.cs" />
     <Compile Include="Mechanics\HarmonyStatAdjustments.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resources.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Utilities\AssetLoader.cs" />
     <Compile Include="Utilities\Attributes.cs" />
@@ -146,9 +144,6 @@
     <Compile Include="Utilities\DescriptionTools.cs" />
     <Compile Include="Utilities\Helpers.cs" />
     <Compile Include="Utilities\ILUtils.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Config\Blueprints.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

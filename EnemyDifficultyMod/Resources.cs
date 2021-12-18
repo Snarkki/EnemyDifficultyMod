@@ -23,12 +23,12 @@ namespace EnemyDifficultyMod
         }
 #endif
 
-        public static T GetModBlueprint<T>(string name) where T : SimpleBlueprint
-        {
-            var assetId = ModSettings.Blueprints.GetGUID(name);
-            ModBlueprints.TryGetValue(assetId, out var value);
-            return value as T;
-        }
+        //public static T GetModBlueprint<T>(string name) where T : SimpleBlueprint
+        //{
+        //    var assetId = ModSettings.Blueprints.GetGUID(name);
+        //    ModBlueprints.TryGetValue(assetId, out var value);
+        //    return value as T;
+        //}
         public static T GetBlueprint<T>(string id) where T : SimpleBlueprint
         {
             var assetId = new BlueprintGuid(System.Guid.Parse(id));

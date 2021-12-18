@@ -64,24 +64,24 @@ namespace EnemyDifficultyMod.Utilities {
             return around;
         }
 
-        public static T CreateBlueprint<T>([NotNull] string name, Action<T> init = null) where T : SimpleBlueprint, new() {
-            var result = new T {
-                name = name,
-                AssetGuid = ModSettings.Blueprints.GetGUID(name)
-            };
-            Resources.AddBlueprint(result);
-            init?.Invoke(result);
-            return result;
-        }
+        //public static T CreateBlueprint<T>([NotNull] string name, Action<T> init = null) where T : SimpleBlueprint, new() {
+        //    var result = new T {
+        //        name = name,
+        //        AssetGuid = ModSettings.Blueprints.GetGUID(name)
+        //    };
+        //    Resources.AddBlueprint(result);
+        //    init?.Invoke(result);
+        //    return result;
+        //}
 
-        public static BlueprintBuff CreateBuff(string name, Action<BlueprintBuff> init = null) {
-            var result = Helpers.CreateBlueprint<BlueprintBuff>(name, bp => {
-                bp.FxOnStart = new PrefabLink();
-                bp.FxOnRemove = new PrefabLink();
-            });
-            init?.Invoke(result);
-            return result;
-        }
+        //public static BlueprintBuff CreateBuff(string name, Action<BlueprintBuff> init = null) {
+        //    var result = Helpers.CreateBlueprint<BlueprintBuff>(name, bp => {
+        //        bp.FxOnStart = new PrefabLink();
+        //        bp.FxOnRemove = new PrefabLink();
+        //    });
+        //    init?.Invoke(result);
+        //    return result;
+        //}
 
         public static T CreateCopy<T>(T original, Action<T> init = null) {
             var result = (T)ObjectDeepCopier.Clone(original);

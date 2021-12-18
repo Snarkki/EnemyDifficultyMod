@@ -12,12 +12,12 @@ namespace EnemyDifficultyMod.Config {
         public static ModEntry ModEntry;
        // public static Fixes Fixes;
         //public static AddedContent AddedContent;
-        public static Blueprints Blueprints;
+       // public static Blueprints Blueprints;
        // public static Scaling Scaling;
         public static void LoadAllSettings() {
           //  LoadSettings("Fixes.json", ref Fixes);
           //  LoadSettings("AddedContent.json", ref AddedContent);
-            LoadSettings("Blueprints.json", ref Blueprints);
+         //   LoadSettings("Blueprints.json", ref Blueprints);
             //LoadSettings("Scaling.json", ref Scaling);
         }
         private static void LoadSettings<T>(string fileName, ref T setting) where T : IUpdatableSettings {
