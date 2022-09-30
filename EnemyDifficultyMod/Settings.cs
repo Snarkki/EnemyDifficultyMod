@@ -85,7 +85,7 @@ namespace EnemyDifficultyMod
         public int game_difficulty = 0;
 
 
-
+        public bool userandomstats = false;
         public bool CombatSpeed = false;
         public bool enemyBuffsActivated = false;
         public int enemyBuffInt = 0;

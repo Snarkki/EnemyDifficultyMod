@@ -94,6 +94,9 @@ namespace EnemyDifficultyMod
             GUILayout.BeginHorizontal(Array.Empty<GUILayoutOption>());
             Main.settings.removestats = GUILayout.Toggle(Main.settings.removestats, "Remove stats from player", Array.Empty<GUILayoutOption>());
             GUILayout.EndHorizontal();
+            GUILayout.BeginHorizontal(Array.Empty<GUILayoutOption>());
+            Main.settings.userandomstats = GUILayout.Toggle(Main.settings.userandomstats, "Use Random Stats and buffs", Array.Empty<GUILayoutOption>());
+            GUILayout.EndHorizontal();
 
 
             //CreateStatButtons("Combat Speed Modifier", ref Main.settings.combatSpeedString, ref Main.settings.combatSpeedInt);
